@@ -1,25 +1,37 @@
 import logo from './logo.svg';
+import './index.css';
+import IndexPage from "./components/Indexpage"
+import Info from'./components/Info'
+import data from './data';
 import './App.css';
 
 function App() {
+  const card =data.map(item=> {
+    //  console.log(item)
+     return(
+      <Info img={item.img}
+      place={item.place}
+      view={item.view}
+      location={item.location}
+      info={item.information} />
+     )
+  })
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <section className='page-one'>
+      <IndexPage/>
+         {card}
+         
+    </section>
   );
-}
+  
+  }
+
 
 export default App;
+
+// const card =data.map(item=> {
+    // console.log(item)
+
+    

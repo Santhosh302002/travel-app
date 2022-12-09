@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.Banner{
+  width: 100vw;
+  height: 55px;
+}
+.nav-bar{
+  display: flex;
+  position: absolute;
+    width: 100vw;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+    background: #F55A5A;
+    align-items: center;
+    justify-content: center;
+    
+    /* align-items: center;
+    align-content: center;
+    align-self: center; */
+    /* margin: 50%; */
+}
+.place{
+  display: flex;
+  margin-top: 100px;
+}
+.nav-title{
+  /* position: absolute; */
+  display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+    color: #FFFFFF;    
+    /* padding-top: 20px; */
+
+}
+.nav-icon{
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    /* left: calc(50% - 24px/2 - 50px);
+    top: calc(50% - 24px/2 - 324px); */
+    border-radius: 50%;
+    background: #DADADA;
+}
+.place{
+  width: 30%;
+  height: 100vh;
+  margin: 100px;
+  /* margin-left: 20px; */
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Img-card{
+  box-sizing: content-box;
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+  /* box-shadow: inset; */
+}
+.card-banner{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.locat-icon{
+
+  display: flex;
+  margin-top: 10px;
+  /* margin-right: 5px; */
+    
+}
+.icon-card{
+  margin-right: 10px;
+}
+.view-card{
+  font-family: 'Inter';
+    font-style: normal;
+      align-self: start;
+      /* margin-right: 20px; */
+      padding-left: 50px;
+
+    /* identical to box height */
+  
+    text-decoration-line: underline;
+  
+    color: #918E9B;
+}
+.Name-card{
+  font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  
+    color: #2B283A;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.content-card{
+  width: 300px;
+  font-family: 'Inter';
+    font-style: normal;
+    
+    font-size: 14.24px;
+    line-height: 150%;
+    /* or 15px */
+  
+  
+    color: #2B283A;
+}
+/* .line{
+  margin-left:50px ;
+  width: 0px;
+    height: 500px;
+    border: 1px solid #ecd1d1;
+} */
+.card{
+  margin-top: 50px;
+}
+.card-banner{
+  margin-top: 50px;
+  /* padding-top: 100px; */
+}
+.Img-card:hover{
+  height: 250px;
+    width: 350px;
+    transition-duration: 0.75s;
+    border-radius: 5px;
+      /* box-shadow: 5px 2px 2px rgb(172, 172, 172); */
+}
+.shadow{
+  box-sizing: border-box;
+  height: 250px;
+    width: 330px;
+   
 }
